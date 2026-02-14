@@ -34,7 +34,7 @@ export default function FeatureShowcase({
   return (
     <section
       className={clsx(
-        "py-24 lg:py-32",
+        "overflow-hidden py-24 lg:py-32",
         elevated ? "bg-decidel-dark" : "bg-decidel-black"
       )}
     >
