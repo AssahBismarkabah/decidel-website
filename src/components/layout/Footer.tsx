@@ -4,6 +4,8 @@ import Container from "./Container";
 import { SITE_NAME, FOOTER_LINKS } from "@/lib/constants";
 import { NavLink } from "@/types";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 function FooterLink({ link }: { link: NavLink }) {
   if (link.external) {
     return (
@@ -44,7 +46,7 @@ export default function Footer() {
             <div className="col-span-2 md:col-span-1">
               <Link href="/" className="flex items-center gap-2.5">
                 <Image
-                  src="/images/decidel-icon.png"
+                  src={`${basePath}/images/decidel-icon.png`}
                   alt="Decidel"
                   width={28}
                   height={28}

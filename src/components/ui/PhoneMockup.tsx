@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { clsx } from "clsx";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 interface PhoneMockupProps {
   src: string;
   alt: string;
@@ -17,7 +19,7 @@ export default function PhoneMockup({
   return (
     <div className={clsx("relative mx-auto w-[260px] lg:w-[300px]", className)}>
       <Image
-        src={src}
+        src={`${basePath}${src}`}
         alt={alt}
         width={390}
         height={844}

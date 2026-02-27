@@ -8,6 +8,8 @@ import { clsx } from "clsx";
 import { NAV_LINKS, APP_STORE_URL } from "@/lib/constants";
 import Button from "@/components/ui/Button";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -18,7 +20,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5">
           <Image
-            src="/images/decidel-icon.png"
+            src={`${basePath}/images/decidel-icon.png`}
             alt="Decidel"
             width={32}
             height={32}
