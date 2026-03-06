@@ -22,12 +22,17 @@ export default function PricingCards({
             subtitle="Decidel is free forever. Pro unlocks the full power."
           />
         )}
-        <div className="mx-auto grid max-w-4xl gap-8 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-4xl items-stretch gap-8 lg:grid-cols-2">
           {pricingTiers.map((tier, i) => (
-            <AnimateOnScroll key={tier.name} direction="up" delay={i * 0.15}>
+            <AnimateOnScroll
+              key={tier.name}
+              direction="up"
+              delay={i * 0.15}
+              className="h-full"
+            >
               <div
                 className={clsx(
-                  "flex flex-col rounded-2xl border p-8",
+                  "flex h-full flex-col rounded-2xl border p-8",
                   tier.highlighted
                     ? "border-decidel-orange bg-gradient-to-b from-decidel-card to-decidel-black"
                     : "border-decidel-border bg-decidel-card"

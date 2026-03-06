@@ -6,6 +6,9 @@ const basePath = isGithubPages ? "/decidel-website" : "";
 const nextConfig: NextConfig = {
   output: "export",
   basePath,
+  turbopack: {
+    root: __dirname,
+  },
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },

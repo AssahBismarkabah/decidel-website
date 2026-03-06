@@ -4,7 +4,7 @@ export const SITE_NAME = "Decidel";
 export const SITE_DESCRIPTION = "The smartest way to read Hacker News";
 export const SITE_URL = "https://decidel.app";
 
-export const APP_STORE_URL = "https://apps.apple.com/app/decidel/id_PLACEHOLDER";
+export const APP_STORE_URL = "https://apps.apple.com/us/app/decidel/id6759561178";
 
 export const CONTACT_EMAIL = "hello@decidel.app";
 export const TWITTER_HANDLE = "@DecidelD91907";
